@@ -3,8 +3,7 @@ import pytest
 from MovieProject import create_app
 from MovieProject.adapters.memory_repository import MemoryRepository, populate
 
-#TEST_DATA_PATH = os.path.join('/Users', 'diaoyuan', 'Desktop', '235', 'CS235Assignment2', 'tests', 'data')
-TEST_DATA_PATH = "/Users/diaoyuan/Desktop/a2/tests/test_data"
+TEST_DATA_PATH = os.path.join('C:', os.sep,'Users','Eve','Desktop','cs235A2','tests', 'test_data')
 
 @pytest.fixture
 def in_memory_repo():
