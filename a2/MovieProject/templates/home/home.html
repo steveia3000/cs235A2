@@ -1,0 +1,24 @@
+{% extends 'layout.html' %} {% block content %}
+<main id="main">
+  <p>
+  A Web application that demonstrates use of Python's Flask framework.
+    The application makes use of libraries such as the Jinja templating library and WTForms.
+    Architectural design patterns and principles including Repository, Dependency Inversion and
+    Single Responsibility have been used to design the application. The application uses Flask Blueprints
+    to maintain a separation of concerns between application functions. Testing includes unit and end-to-end testing
+    using the pytest tool.
+  </p>
+
+  <br/>
+
+  <h2>Search movie(by actor or director)</h2>
+        <form method="POST" action="{{ handler_url }}">
+             {{ form.csrf_token }} <!-- Need to include this token - Flask WTForms requires it. -->
+            <div class="form-field"> {{ form.content }}
+            </div>
+            {{ form.submit }}
+        </form>
+
+
+</main>
+{% endblock %}
