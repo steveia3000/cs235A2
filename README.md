@@ -53,6 +53,6 @@ assigns TEST_DATA_PATH with the following value (the use of os.path.join and os.
 
 `/Users/aaa/235/MovieProject/tests/test_data`
 
-You can then run tests from within PyCharm.
+You can then run tests from within PyCharm or terminal.
 
  
